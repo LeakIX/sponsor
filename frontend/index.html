@@ -25,125 +25,117 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="d-flex flex-column min-vh-100">
-    <header class="py-3 border-bottom">
+    <header class="py-4">
       <div class="container d-flex justify-content-center">
         <a href="https://leakix.net">
-          <img src="images/logo.png" alt="LeakIX" width="96" height="40" />
+          <img src="images/logo.png" alt="LeakIX" width="144" height="60" />
         </a>
       </div>
     </header>
 
     <main class="flex-grow-1 py-5">
       <div class="container" style="max-width: 600px">
-        <div class="text-center mb-4">
-          <h1 class="text-warning">Sponsor LeakIX</h1>
-          <p class="text-secondary">Support the project with cryptocurrency</p>
+        <div class="text-center mb-5">
+          <h1 class="text-warning mb-4">Sponsor LeakIX</h1>
+          <p class="mb-3">
+            Our mission is to make the internet safer and better. LeakIX is a
+            cyber-security company that provides businesses and researchers with
+            comprehensive visibility into internet-facing assets, helping
+            identify and mitigate security risks.
+          </p>
+          <p class="mb-3">
+            We support privacy-related projects and tools that protect users
+            online.
+          </p>
+          <p class="text-secondary mb-0">
+            Your support helps us maintain LeakIX as a free resource, develop
+            open-source tools, and fund privacy-focused projects.
+          </p>
         </div>
 
-        <div class="card mb-4">
-          <div class="card-body">
-            <p class="mb-2">
-              LeakIX is a cyber-security company that specializes in providing
-              businesses and researchers with comprehensive visibility into
-              internet-facing assets. The platform collects and analyses data on
-              IP addresses, domains and other network assets to help
-              organizations identify and mitigate security risks, including
-              exposed databases, misconfigured servers and vulnerable software.
-            </p>
-            <p class="mb-0 text-secondary">
-              We also support privacy-related projects and tools that protect
-              users online.
-            </p>
-          </div>
+        <div class="text-center my-5">
+          <a
+            href="https://donate.stripe.com/dRm3cufAbac9g4g3TIbsc0a"
+            class="btn btn-warning btn-lg fw-semibold"
+          >
+            <i class="bi bi-credit-card me-2"></i>
+            Donate with Card
+          </a>
         </div>
 
-        <div class="card mb-4">
-          <div class="card-header">
-            <span class="fw-semibold">Support Our Mission</span>
-          </div>
-          <div class="card-body">
-            <p class="mb-3">
-              Your support helps us maintain LeakIX as a free resource for the
-              security community, develop open-source tools, and fund
-              privacy-focused projects. Thank you for believing in our mission.
-            </p>
-            <a
-              href="https://donate.stripe.com/dRm3cufAbac9g4g3TIbsc0a"
-              class="btn btn-warning fw-semibold"
-            >
-              <i class="bi bi-credit-card me-2"></i>
-              Donate with Card
-            </a>
-          </div>
-        </div>
-
-        <h5 class="text-secondary mb-3">Or donate with cryptocurrency</h5>
-
-        <div class="d-flex flex-column gap-3">
-          <div class="card">
-            <div class="card-header d-flex align-items-center">
-              <span class="fw-semibold">Bitcoin</span>
-              <span class="text-secondary ms-auto small">BTC</span>
-            </div>
-            <div class="card-body d-flex gap-2 flex-column flex-md-row">
-              <code class="crypto-address flex-grow-1">
+        <div class="text-center my-5">
+          <h4 class="mb-4">Or Donate with Crypto</h4>
+          <div class="d-flex flex-column gap-3 text-start">
+            <div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-currency-bitcoin me-2 text-warning"></i>
+                <span class="fw-semibold">Bitcoin</span>
+                <button
+                  class="btn btn-sm btn-outline-warning ms-auto"
+                  data-copy
+                  data-address="bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                >
+                  Copy
+                </button>
+              </div>
+              <code class="crypto-address d-block">
                 bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
               </code>
-              <button class="btn btn-warning fw-semibold" data-copy>
-                Copy
-              </button>
             </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header d-flex align-items-center">
-              <span class="fw-semibold">Ethereum</span>
-              <span class="text-secondary ms-auto small">ETH</span>
-            </div>
-            <div class="card-body d-flex gap-2 flex-column flex-md-row">
-              <code class="crypto-address flex-grow-1">
+            <div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-currency-exchange me-2 text-warning"></i>
+                <span class="fw-semibold">Ethereum</span>
+                <button
+                  class="btn btn-sm btn-outline-warning ms-auto"
+                  data-copy
+                  data-address="0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                >
+                  Copy
+                </button>
+              </div>
+              <code class="crypto-address d-block">
                 0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
               </code>
-              <button class="btn btn-warning fw-semibold" data-copy>
-                Copy
-              </button>
             </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header d-flex align-items-center">
-              <span class="fw-semibold">Zcash</span>
-              <span class="text-secondary ms-auto small">ZEC</span>
-            </div>
-            <div class="card-body d-flex gap-2 flex-column flex-md-row">
-              <code class="crypto-address flex-grow-1">
+            <div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-shield-lock me-2 text-warning"></i>
+                <span class="fw-semibold">Zcash</span>
+                <button
+                  class="btn btn-sm btn-outline-warning ms-auto"
+                  data-copy
+                  data-address="zs1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                >
+                  Copy
+                </button>
+              </div>
+              <code class="crypto-address d-block">
                 zs1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
               </code>
-              <button class="btn btn-warning fw-semibold" data-copy>
-                Copy
-              </button>
             </div>
-          </div>
-
-          <div class="card">
-            <div class="card-header d-flex align-items-center">
-              <span class="fw-semibold">Monero</span>
-              <span class="text-secondary ms-auto small">XMR</span>
-            </div>
-            <div class="card-body d-flex gap-2 flex-column flex-md-row">
-              <code class="crypto-address flex-grow-1">
+            <div>
+              <div class="d-flex align-items-center mb-2">
+                <i class="bi bi-incognito me-2 text-warning"></i>
+                <span class="fw-semibold">Monero</span>
+                <button
+                  class="btn btn-sm btn-outline-warning ms-auto"
+                  data-copy
+                  data-address="4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                >
+                  Copy
+                </button>
+              </div>
+              <code class="crypto-address d-block">
                 4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
               </code>
-              <button class="btn btn-warning fw-semibold" data-copy>
-                Copy
-              </button>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="py-3 border-top text-center">
+    <footer class="py-4 text-center">
       <div class="container">
         <div class="d-flex justify-content-center gap-4 flex-wrap mb-2 fs-4">
           <a href="https://leakix.net" class="link-warning" title="Website">
@@ -183,11 +175,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       document.querySelectorAll("[data-copy]").forEach((btn) => {
+        const originalText = btn.innerHTML;
         btn.addEventListener("click", () => {
-          const address = btn.previousElementSibling.textContent.trim();
+          const address = btn.dataset.address;
           navigator.clipboard.writeText(address).then(() => {
-            btn.textContent = "Copied!";
-            setTimeout(() => (btn.textContent = "Copy"), 2000);
+            btn.innerHTML = '<i class="bi bi-check me-1"></i>Copied!';
+            setTimeout(() => (btn.innerHTML = originalText), 2000);
           });
         });
       });
