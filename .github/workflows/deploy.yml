@@ -29,10 +29,10 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm install
+        run: make install
 
-      - name: Build SCSS
-        run: make build-sass
+      - name: Build
+        run: make build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
