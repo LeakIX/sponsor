@@ -21,8 +21,13 @@ install: ## Install npm dependencies (Prettier, Sass)
 # =============================================================================
 
 .PHONY: build
-build: build-sass ## Build CSS from SCSS
+build: build-html build-sass ## Build HTML and CSS
 	@echo "Build complete"
+
+.PHONY: build-html
+build-html: ## Generate HTML from template and data
+	@echo "Generating HTML..."
+	node scripts/build-html.js
 
 .PHONY: build-sass
 build-sass: ## Compile SCSS to CSS

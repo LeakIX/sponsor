@@ -53,10 +53,7 @@
         </div>
 
         <div class="text-center my-5">
-          <a
-            href="https://donate.stripe.com/dRm3cufAbac9g4g3TIbsc0a"
-            class="btn btn-warning btn-lg fw-semibold"
-          >
+          <a href="{{STRIPE_URL}}" class="btn btn-warning btn-lg fw-semibold">
             <i class="bi bi-credit-card me-2"></i>
             Donate with Card
           </a>
@@ -65,51 +62,7 @@
         <div class="text-center my-5">
           <h4 class="mb-4">Or Donate with Crypto</h4>
           <div class="d-flex flex-column gap-3 text-start">
-            <div>
-              <div class="d-flex align-items-center mb-2">
-                <span class="fw-semibold">Bitcoin</span>
-                <button
-                  class="btn btn-sm btn-outline-warning ms-auto"
-                  data-copy
-                  data-address="bc1qdtyal0t3r4tvs80zcgkjwxwk65azsxx6u8xrqd"
-                >
-                  Copy
-                </button>
-              </div>
-              <code class="crypto-address d-block">
-                bc1qdtyal0t3r4tvs80zcgkjwxwk65azsxx6u8xrqd
-              </code>
-            </div>
-            <div>
-              <div class="d-flex align-items-center mb-2">
-                <span class="fw-semibold">Ethereum / USDT / USDC</span>
-                <button
-                  class="btn btn-sm btn-outline-warning ms-auto"
-                  data-copy
-                  data-address="0x52710FAEfb1b27E8f2a9773eF93675cCB2e9616a"
-                >
-                  Copy
-                </button>
-              </div>
-              <code class="crypto-address d-block">
-                0x52710FAEfb1b27E8f2a9773eF93675cCB2e9616a
-              </code>
-            </div>
-            <div>
-              <div class="d-flex align-items-center mb-2">
-                <span class="fw-semibold">Zcash</span>
-                <button
-                  class="btn btn-sm btn-outline-warning ms-auto"
-                  data-copy
-                  data-address="u15dd7qv4n2mp6mwvcp7kfahxd8fn2r4p7vh004zvfn2nux2mnfvc7qsh632x2lksuhvaqgpcq37sr5ycuej5z379qkglg90n7yhyse9az76hh7asrfqry8s4t75tkn8xhnarnyz6vqdzn0ddulxhxl504yqgd42ln3ytrgs958sletf7z"
-                >
-                  Copy
-                </button>
-              </div>
-              <code class="crypto-address d-block">
-                u15dd7qv4n2mp6mwvcp7kfahxd8fn2r4p7vh004zvfn2nux2mnfvc7qsh632x2lksuhvaqgpcq37sr5ycuej5z379qkglg90n7yhyse9az76hh7asrfqry8s4t75tkn8xhnarnyz6vqdzn0ddulxhxl504yqgd42ln3ytrgs958sletf7z
-              </code>
-            </div>
+            {{CRYPTO_SECTION}}
           </div>
         </div>
       </div>

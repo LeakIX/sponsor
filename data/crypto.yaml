@@ -1,20 +1,12 @@
+stripe:
+  url: https://donate.stripe.com/dRm3cufAbac9g4g3TIbsc0a
+
 cryptocurrencies:
   - name: Bitcoin
-    symbol: BTC
-    address: "bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    icon: "btc"
+    address: bc1qdtyal0t3r4tvs80zcgkjwxwk65azsxx6u8xrqd
 
-  - name: Ethereum
-    symbol: ETH
-    address: "0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-    icon: "eth"
+  - name: Ethereum / USDT / USDC
+    address: "0x52710FAEfb1b27E8f2a9773eF93675cCB2e9616a"
 
   - name: Zcash
-    symbol: ZEC
-    address: "zs1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-    icon: "zec"
-
-  - name: Monero
-    symbol: XMR
-    address: "4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-    icon: "xmr"
+    address: u15dd7qv4n2mp6mwvcp7kfahxd8fn2r4p7vh004zvfn2nux2mnfvc7qsh632x2lksuhvaqgpcq37sr5ycuej5z379qkglg90n7yhyse9az76hh7asrfqry8s4t75tkn8xhnarnyz6vqdzn0ddulxhxl504yqgd42ln3ytrgs958sletf7z
