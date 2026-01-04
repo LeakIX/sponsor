@@ -1,0 +1,20 @@
+cryptocurrencies:
+  - name: Bitcoin
+    symbol: BTC
+    address: "bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    icon: "btc"
+
+  - name: Ethereum
+    symbol: ETH
+    address: "0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    icon: "eth"
+
+  - name: Zcash
+    symbol: ZEC
+    address: "zs1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    icon: "zec"
+
+  - name: Monero
+    symbol: XMR
+    address: "4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    icon: "xmr"

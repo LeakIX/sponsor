@@ -1,0 +1,10 @@
+{
+  "name": "leakix-sponsor",
+  "version": "1.0.0",
+  "description": "LeakIX sponsor/donation page",
+  "private": true,
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "sass": "^1.97.1"
+  }
+}
