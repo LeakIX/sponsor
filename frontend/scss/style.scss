@@ -122,7 +122,18 @@ a {
     margin-left: auto;
   }
 
+  &__body {
+    display: flex;
+    gap: $spacing;
+    align-items: stretch;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+
   &__address {
+    flex: 1;
     background-color: $bg-dark;
     border: 1px solid $border;
     border-radius: $radius-sm;
@@ -131,10 +142,30 @@ a {
     word-break: break-all;
     color: $text-light;
     font-family: $font-family;
+    display: flex;
+    align-items: center;
 
     @media (max-width: $mobile) {
       font-size: 0.7rem;
       padding: $spacing * 0.5;
+    }
+  }
+
+  &__copy {
+    background-color: $primary;
+    color: $text-dark;
+    border: none;
+    border-radius: $radius-sm;
+    padding: $spacing * 0.75 $spacing;
+    font-family: $font-family;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color $transition-fast;
+    white-space: nowrap;
+
+    &:hover {
+      background-color: $secondary;
     }
   }
 }

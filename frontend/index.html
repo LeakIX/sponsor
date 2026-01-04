@@ -44,8 +44,11 @@
               <span class="crypto-card__name">Bitcoin</span>
               <span class="crypto-card__symbol">BTC</span>
             </div>
-            <div class="crypto-card__address">
-              bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <div class="crypto-card__body">
+              <code class="crypto-card__address">
+                bc1qxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              </code>
+              <button class="crypto-card__copy" data-copy>Copy</button>
             </div>
           </div>
 
@@ -54,8 +57,11 @@
               <span class="crypto-card__name">Ethereum</span>
               <span class="crypto-card__symbol">ETH</span>
             </div>
-            <div class="crypto-card__address">
-              0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            <div class="crypto-card__body">
+              <code class="crypto-card__address">
+                0xXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              </code>
+              <button class="crypto-card__copy" data-copy>Copy</button>
             </div>
           </div>
 
@@ -64,8 +70,11 @@
               <span class="crypto-card__name">Zcash</span>
               <span class="crypto-card__symbol">ZEC</span>
             </div>
-            <div class="crypto-card__address">
-              zs1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            <div class="crypto-card__body">
+              <code class="crypto-card__address">
+                zs1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              </code>
+              <button class="crypto-card__copy" data-copy>Copy</button>
             </div>
           </div>
 
@@ -74,8 +83,11 @@
               <span class="crypto-card__name">Monero</span>
               <span class="crypto-card__symbol">XMR</span>
             </div>
-            <div class="crypto-card__address">
-              4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+            <div class="crypto-card__body">
+              <code class="crypto-card__address">
+                4XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              </code>
+              <button class="crypto-card__copy" data-copy>Copy</button>
             </div>
           </div>
         </div>
@@ -96,5 +108,17 @@
         <p class="footer__text">LeakIX - Security Research Platform</p>
       </div>
     </footer>
+
+    <script>
+      document.querySelectorAll("[data-copy]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const address = btn.previousElementSibling.textContent.trim();
+          navigator.clipboard.writeText(address).then(() => {
+            btn.textContent = "Copied!";
+            setTimeout(() => (btn.textContent = "Copy"), 2000);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
