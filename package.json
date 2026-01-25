@@ -6,6 +6,6 @@
   "devDependencies": {
     "js-yaml": "^4.1.0",
     "prettier": "^3.7.4",
-    "sass": "^1.97.1"
+    "sass": "^1.97.3"
   }
 }
