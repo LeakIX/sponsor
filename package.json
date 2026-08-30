@@ -4,7 +4,7 @@
   "description": "LeakIX sponsor/donation page",
   "private": true,
   "devDependencies": {
-    "js-yaml": "^5.3.0",
+    "js-yaml": "^5.4.1",
     "prettier": "^3.9.6",
     "sass": "^1.103.0"
   }
