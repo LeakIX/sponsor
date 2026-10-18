@@ -5,7 +5,7 @@
   "private": true,
   "devDependencies": {
     "js-yaml": "^5.4.3",
-    "prettier": "^3.9.6",
+    "prettier": "^3.9.10",
     "sass": "^1.105.1"
   }
 }
